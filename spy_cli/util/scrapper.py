@@ -211,7 +211,8 @@ def ply(video_url, subtitle_url=None, platform='windows'):
         elif platform == 'iphone':
             console = Console()
             format_video_url = video_url.replace("#.mp4","")
-            markdown_text = f"[Click here to open VLC]({format_video_url})"
+            vlc_url = f"vlc://{format_video_url}"
+            markdown_text = f"[Click here to open]({vlc_url})"
             markdown = Markdown(markdown_text)
             console.print(markdown)
             input("Press Enter to continue...")
