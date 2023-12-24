@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/junioralive/spy-cli">
-    <img src="img here" alt="Logo" width="80" height="80">
+    <img src="https://github.com/junioralive/spy-cli/assets/54473944/463a6d6b-d24f-4d58-927a-7a40dbb12347" alt="Logo" width="80" height="80">
   </a>
 
   <p align="center">
