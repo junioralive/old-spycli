@@ -193,22 +193,24 @@ def ply(video_url, subtitle_url=None, platform='windows'):
             command = f"mpv --fs \"{video_url}\""
             if subtitle_url:
                 command += f" --sub-file=\"{subtitle_url}\""
+            subprocess.Popen(command)
 
         elif platform == 'mac':
             command = f"mpv --fs \"{video_url}\""
             if subtitle_url:
                 command += f" --sub-file=\"{subtitle_url}\""
+            subprocess.Popen(command)
 
         elif platform == 'android':
             # Android mpv might not support external subtitles via command line
             command = ["am", "start", "-n", "is.xyz.mpv/is.xyz.mpv.MPVActivity", "-e", "filepath", video_url]
+            subprocess.Popen(command)
 
         elif platform == 'iphone':
             # iPhone VLC command line might not support external subtitles
             print(f"\033]8;;vlc://{video_url}\033\\-------------------------\n- Tap to open -\n-------------------------\033]8;;\033\\\n")
             input("Press Enter to continue...")
-            
-        subprocess.Popen(command)
+
         print("Playing, please wait...")
 
     except Exception as e:
