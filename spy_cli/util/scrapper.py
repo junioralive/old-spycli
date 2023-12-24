@@ -7,6 +7,8 @@ from typing import Optional
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
 import time 
+from rich.console import Console
+from rich.markdown import Markdown
 
 class VidSrcExtractor:
     def decode(self, str) -> bytearray:
@@ -207,9 +209,11 @@ def ply(video_url, subtitle_url=None, platform='windows'):
             subprocess.Popen(command)
 
         elif platform == 'iphone':
-            # iPhone VLC command line might not support external subtitles
+            console = Console()
             format_video_url = video_url.replace("#.mp4","")
-            print(f"\033]8;;{format_video_url}\033\\-------------------------\n- Tap to open -\n-------------------------\033]8;;\033\\")
+            markdown_text = f"[Click here to open VLC]({format_video_url})"
+            markdown = Markdown(markdown_text)
+            console.print(markdown)
             input("Press Enter to continue...")
 
         print("Playing, please wait...")
