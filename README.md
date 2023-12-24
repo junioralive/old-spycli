@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/junioralive/spy-cli">
-    <img src="img here" alt="Logo" width="80" height="80">
+    <img src="https://github.com/junioralive/spy-cli/assets/54473944/463a6d6b-d24f-4d58-927a-7a40dbb12347" alt="Logo" width="80" height="80">
   </a>
 
   <p align="center">
@@ -22,7 +22,7 @@
 </h1>
 
 
-video here
+https://github.com/junioralive/spy-cli/assets/54473944/1423f1a2-37b2-45be-88c6-4781220bf969
 
 
 <!-- TABLE OF CONTENTS -->
@@ -81,7 +81,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Make sure `Python` `pip` and `git` are installed.
   - Clone the repository:
     ``` 
-    git clone https://github.com/junioralive/spycli-api.git
+    git clone https://github.com/junioralive/spy-cli.git
     ```
   - Navigate to the cloned directory:
     ``` 
@@ -107,12 +107,11 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Run following commands (Note: this may take a while)
     ```
     pkg update && pkg upgrade
-    pkg install python git
-    python -m ensurepip --upgrade
-    pkg install git
-    git clone https://github.com/junioralive/spycli-api.git
+    pkg install python git fzf
+    pip install wheel
+    git clone https://github.com/junioralive/spy-cli.git
     cd spy-cli
-    pip install -e .
+    pip3 install -e .
     ```
   - First time run:
     ``` 
@@ -132,7 +131,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     apk update && apk upgrade
     apk add python3 git
     python3 -m ensurepip
-    git clone https://github.com/junioralive/spycli-api.git
+    git clone https://github.com/junioralive/spy-cli.git
     cd spy-cli
     pip install -e .
     ```
