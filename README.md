@@ -81,6 +81,10 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- WIN AND LINUX -->
 ### Windows
   - Make sure `Python` `pip` and `git` are installed.
+  - Installing fzf::
+    ``` 
+    winget install fzf
+    ```
   - Clone the repository:
     ``` 
     git clone https://github.com/junioralive/spy-cli.git
