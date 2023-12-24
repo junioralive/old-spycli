@@ -107,12 +107,11 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Run following commands (Note: this may take a while)
     ```
     pkg update && pkg upgrade
-    pkg install python git
-    python -m ensurepip --upgrade
-    pkg install git
+    pkg install python git fzf
+    pip install wheel
     git clone https://github.com/junioralive/spy-cli.git
     cd spy-cli
-    pip install -e .
+    pip3 install -e .
     ```
   - First time run:
     ``` 
