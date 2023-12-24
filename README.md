@@ -81,7 +81,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Make sure `Python` `pip` and `git` are installed.
   - Clone the repository:
     ``` 
-    git clone https://github.com/junioralive/spycli-api.git
+    git clone https://github.com/junioralive/spy-cli.git
     ```
   - Navigate to the cloned directory:
     ``` 
@@ -110,7 +110,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     pkg install python git
     python -m ensurepip --upgrade
     pkg install git
-    git clone https://github.com/junioralive/spycli-api.git
+    git clone https://github.com/junioralive/spy-cli.git
     cd spy-cli
     pip install -e .
     ```
@@ -132,7 +132,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     apk update && apk upgrade
     apk add python3 git
     python3 -m ensurepip
-    git clone https://github.com/junioralive/spycli-api.git
+    git clone https://github.com/junioralive/spy-cli.git
     cd spy-cli
     pip install -e .
     ```
