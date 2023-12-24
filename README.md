@@ -37,7 +37,9 @@ https://github.com/junioralive/spy-cli/assets/54473944/1423f1a2-37b2-45be-88c6-4
       <li><a href="#prerequisites">Prerequisites</a></li>
       <li><a href="#installation">Installation</a></li>
       <ul>
-        <li><a href="#windows--linux--mac">Windows / Linux / MAC</a></li>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#linux">Linux</a></li>
+        <li><a href="#mac">MAC</a></li>
         <li><a href="#android">Android</a></li>
         <li><a href="#ios">iOS</a></li>
       </ul>
@@ -77,7 +79,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 
 
 <!-- WIN AND LINUX -->
-### Windows / Linux
+### Windows
   - Make sure `Python` `pip` and `git` are installed.
   - Clone the repository:
     ``` 
@@ -87,6 +89,72 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     cd spy-cli
     ```  
+  - Run this Command inside your Terminal
+    ``` 
+    pip install -e .
+    ```
+  - First time run:
+    ``` 
+    spy-cli.config
+    ```
+Enter your API URL, choose your platform and you're all set. For API details, [spycli-api](https://github.com/junioralive/spycli-api).
+No API No problem, READ about [spycli-noserver](https://github.com/junioralive/spycli-noserver) before using.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LINUX -->
+### Linux
+  - Make sure `Python` `pip` and `git` are installed.
+  - Clone the repository:
+    ``` 
+    git clone https://github.com/junioralive/spy-cli.git
+    ```
+  - Navigate to the cloned directory:
+    ``` 
+    cd spy-cli
+    ```
+  - Installing fzf:
+    ``` 
+    sudo apt-get install fzf
+    ```
+  - Run this Command inside your Terminal
+    ``` 
+    pip install -e .
+    ```
+  - First time run:
+    ``` 
+    spy-cli.config
+    ```
+Enter your API URL, choose your platform and you're all set. For API details, [spycli-api](https://github.com/junioralive/spycli-api).
+No API No problem, READ about [spycli-noserver](https://github.com/junioralive/spycli-noserver) before using.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MAC -->
+### MAC
+  - Make sure `Python` `pip` and `git` are installed.
+  - Open the Terminal application on your Mac:
+    ``` 
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+  - Installing fzf:
+    ``` 
+    brew install fzf
+    ```
+  - Clone the repository:
+    ``` 
+    git clone https://github.com/junioralive/spy-cli.git
+    ```
+  - Navigate to the cloned directory:
+    ``` 
+    cd spy-cli
+    ```
+  - Installing fzf:
+    ``` 
+    sudo apt-get install fzf
+    ```
   - Run this Command inside your Terminal
     ``` 
     pip install -e .
