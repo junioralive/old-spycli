@@ -129,11 +129,11 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Run following commands (Note: this may take a while)
     ```
     apk update && apk upgrade
-    apk add python3 git
-    python3 -m ensurepip
+    apk add python3 git fzf
+    python3 -m ensurepip --upgrade
     git clone https://github.com/junioralive/spy-cli.git
     cd spy-cli
-    pip install -e .
+    pip3 install -e .
     ```
   - First time run:
     ``` 
