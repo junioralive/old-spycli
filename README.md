@@ -22,7 +22,7 @@
 </h1>
 
 
-video here
+https://github.com/junioralive/spy-cli/assets/54473944/1423f1a2-37b2-45be-88c6-4781220bf969
 
 
 <!-- TABLE OF CONTENTS -->
