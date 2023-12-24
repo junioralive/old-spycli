@@ -184,7 +184,10 @@ class VidSrcExtractor:
         elif "filemoon" in source_url:
             return self.handle_filemoon(source_url)
         
-
+def shorten_url(url):
+    api_url = f"http://tinyurl.com/api-create.php?url={url}"
+    response = requests.get(api_url)
+    return response.text
 
 def ply(video_url, subtitle_url=None, platform='windows'):
 
@@ -209,10 +212,10 @@ def ply(video_url, subtitle_url=None, platform='windows'):
         elif platform == 'iphone':
             format_video_url = video_url.replace("#.mp4","")
             vlc_url = f"vlc://{format_video_url}"
-            print(f"Copy and paste the below link to safari.")
-            print(f"\n\n {vlc_url} \n\n")
+            short_url = shorten_url(vlc_url)
+            print(f"\033]8;;{short_url}\033\\-------------------------\n- Tap to open -\n-------------------------\033]8;;\033\\\n")
             input("Press Enter to continue...")
-
+            
         print("Playing, please wait...")
 
     except Exception as e:
