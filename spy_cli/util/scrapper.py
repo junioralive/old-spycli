@@ -7,7 +7,6 @@ from typing import Optional
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
 import time 
-import sys
 
 class VidSrcExtractor:
     def decode(self, str) -> bytearray:
@@ -209,11 +208,10 @@ def ply(video_url, subtitle_url=None, platform='windows'):
 
         elif platform == 'iphone':
             format_video_url = video_url.replace("#.mp4","")
-            print(
-                f"\033]8;;vlc://{format_video_url}\033\\-------------------------\n- Tap to open Outplayer -\n-------------------------\033]8;;\033\\\n"
-            )
-
-            sys.exit(1)
+            vlc_url = f"vlc://{format_video_url}"
+            print(f"Copy and paste the below link to safari.")
+            print(f"\n\n {vlc_url} \n\n")
+            input("Press Enter to continue...")
 
         print("Playing, please wait...")
 
