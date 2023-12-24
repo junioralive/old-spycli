@@ -208,7 +208,8 @@ def ply(video_url, subtitle_url=None, platform='windows'):
 
         elif platform == 'iphone':
             # iPhone VLC command line might not support external subtitles
-            print(f"\033]8;;vlc://{video_url}\033\\-------------------------\n- Tap to open -\n-------------------------\033]8;;\033\\\n")
+            format_video_url = video_url.replace(".mp4","")
+            print(f"\033]8;;vlc://{format_video_url}\033\\-------------------------\n- Tap to open -\n-------------------------\033]8;;\033\\\n")
             input("Press Enter to continue...")
 
         print("Playing, please wait...")
