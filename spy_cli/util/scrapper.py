@@ -206,6 +206,7 @@ def ply(video_url, subtitle_url=None, platform='windows'):
         elif platform == 'iphone':
             # iPhone VLC command line might not support external subtitles
             print(f"\033]8;;vlc://{video_url}\033\\-------------------------\n- Tap to open -\n-------------------------\033]8;;\033\\\n")
+            input("Press Enter to continue...")
             
         subprocess.Popen(command)
         print("Playing, please wait...")
