@@ -102,6 +102,10 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     pip install -e .
     ```
+  - Install py7zr dependencies:
+    ```
+    pip install py7zr
+    ```
   - Install mpv player (Only for windows):
     ```
     spy-cli-player
