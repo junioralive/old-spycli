@@ -102,6 +102,10 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     pip install -e .
     ```
+  - Install mpv player:
+    ```
+    spy-cli-player
+    ```
   - First time run:
     ``` 
     spy-cli.config
@@ -119,7 +123,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Make sure `Python` [`pip`](https://pip.pypa.io/en/stable/installation/) and [`git`](https://git-scm.com/downloads) are installed.
   - Run this Command inside your Terminal (Installing fzf):
     ``` 
-    sudo apt-get install fzf
+    sudo apt-get install fzf sudo mpv
     ```
   - Clone the repository:
     ``` 
@@ -158,7 +162,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ```
   - Installing fzf:
     ``` 
-    brew install fzf
+    brew install fzf mpv
     ```
   - Clone the repository:
     ``` 
