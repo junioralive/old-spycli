@@ -7,7 +7,7 @@
   </a>
 
   <p align="center">
-    A cli tool to browse and watch Movies/Shows/MORE, mainly focused on Bollywood & Indian Entertainment (Hindi Audio). 
+    A cli tool to browse and watch Movies/Shows/MORE
     <br />
     <br />
     <a href="https://github.com/junioralive/spy-cli/issues">Report Bug</a>
