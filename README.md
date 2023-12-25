@@ -102,7 +102,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     pip install -e .
     ```
-  - Install mpv player:
+  - Install mpv player (Only for windows):
     ```
     spy-cli-player
     ```
