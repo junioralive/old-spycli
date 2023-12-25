@@ -8,7 +8,6 @@ setup(
     install_requires=[
         'requests',
         'pyfzf',
-        'py7zr',
         'beautifulsoup4',
     ],
     entry_points={
