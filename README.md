@@ -78,14 +78,11 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 ## Installation
 
 
-<!-- WIN AND LINUX -->
+<!-- WINDOWS -->
 ### Windows
-  - Make sure `Python` `pip` and `git` are installed.
-  - Installing setuptools:
-    ``` 
-    pip install --upgrade setuptools wheel
-    ``` 
-  - Installing fzf::
+
+  - Make sure (`Python`)[https://www.python.org/] (`pip`)[https://pip.pypa.io/en/stable/installation/] and (`git`)[https://git-scm.com/downloads] are installed.
+  - Run this Command inside your Terminal (Installing fzf):
     ``` 
     winget install fzf
     ```
@@ -96,8 +93,12 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Navigate to the cloned directory:
     ``` 
     cd spy-cli
-    ```  
-  - Run this Command inside your Terminal
+    ```
+  - Installing setuptools:
+    ``` 
+    pip install --upgrade setuptools wheel
+    ``` 
+  - Install requirements and dependencies:
     ``` 
     pip install -e .
     ```
@@ -105,6 +106,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     spy-cli.config
     ```
+    
 Enter your API URL, choose your platform and you're all set. For API details, [spycli-api](https://github.com/junioralive/spycli-api).
 No API No problem, READ about [spycli-noserver](https://github.com/junioralive/spycli-noserver) before using.
 
@@ -113,7 +115,12 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 
 <!-- LINUX -->
 ### Linux
-  - Make sure `Python` `pip` and `git` are installed.
+
+  - Make sure `Python` (`pip`)[https://pip.pypa.io/en/stable/installation/] and (`git`)[https://git-scm.com/downloads] are installed.
+  - Run this Command inside your Terminal (Installing fzf):
+    ``` 
+    sudo apt-get install fzf
+    ```
   - Clone the repository:
     ``` 
     git clone https://github.com/junioralive/spy-cli.git
@@ -122,11 +129,11 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     cd spy-cli
     ```
-  - Installing fzf:
+  - Installing setuptools:
     ``` 
-    sudo apt-get install fzf
-    ```
-  - Run this Command inside your Terminal
+    pip install --upgrade setuptools wheel
+    ``` 
+  - Install requirements and dependencies:
     ``` 
     pip install -e .
     ```
@@ -134,6 +141,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     spy-cli.config
     ```
+    
 Enter your API URL, choose your platform and you're all set. For API details, [spycli-api](https://github.com/junioralive/spycli-api).
 No API No problem, READ about [spycli-noserver](https://github.com/junioralive/spycli-noserver) before using.
 
@@ -142,8 +150,9 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 
 <!-- MAC -->
 ### MAC
-  - Make sure `Python` `pip` and `git` are installed.
-  - Open the Terminal application on your Mac:
+
+  - Make sure (`Python`)[https://www.python.org/] (`pip`)[https://pip.pypa.io/en/stable/installation/] and (`git`)[https://git-scm.com/downloads] are installed.
+  - Open the Terminal application on your Mac (Installing Homebrew:
     ``` 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
@@ -163,7 +172,11 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     sudo apt-get install fzf
     ```
-  - Run this Command inside your Terminal
+  - Installing setuptools:
+    ``` 
+    pip install --upgrade setuptools wheel
+    ``` 
+  - Install requirements and dependencies:
     ``` 
     pip install -e .
     ```
@@ -171,6 +184,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     spy-cli.config
     ```
+    
 Enter your API URL, choose your platform and you're all set. For API details, [spycli-api](https://github.com/junioralive/spycli-api).
 No API No problem, READ about [spycli-noserver](https://github.com/junioralive/spycli-noserver) before using.
 
@@ -178,7 +192,8 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 
 
 <!-- ANDROID --> 
-### Android               
+### Android            
+
   - Make sure [MPV](https://play.google.com/store/apps/details?id=is.xyz.mpv) and [Termux](https://play.google.com/store/apps/details?id=com.termux) are installed.
   - Run following commands (Note: this may take a while)
     ```
@@ -198,8 +213,10 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- IOS -->
 ### iOS
+
   - Make sure [VLC MEDIA PLAYER](https://apps.apple.com/us/app/vlc-media-player/id650377962) and [iSH](https://apps.apple.com/us/app/ish-shell/id1436902243) are installed.
 
   - Run following commands (Note: this may take a while)
@@ -215,6 +232,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ``` 
     spy-cli.config
     ```
+    
 Enter your API URL, choose your platform and you're all set. For API details, [spycli-api](https://github.com/junioralive/spycli-api).
 No API No problem, READ about [spycli-noserver](https://github.com/junioralive/spycli-noserver) before using.
 
@@ -223,7 +241,6 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
 
 Type: ```spy-cli``` into your Commandline.
 
@@ -239,7 +256,6 @@ READ about [spycli-noserver](https://github.com/junioralive/spycli-noserver) bef
 <!-- DISCLAIMER -->
 ## Disclaimer
 
-
 This project is designed to be utilized at the discretion and responsibility of the user, taking into consideration the specific legal and governmental regulations applicable to their context. The project does not exercise control over the nature of the content it disseminates. Consequently, any use of copyrighted material sourced from providers falls under the user’s own risk and accountability, and is not the responsibility of the project developers
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -247,7 +263,6 @@ This project is designed to be utilized at the discretion and responsibility of 
 
 <!-- Feature -->
 ## Feature
-
 
 If you want a feature, create an [issue](https://github.com/junioralive/spy-cli/issues/new) or create the feature and make a pull request.
 
@@ -257,13 +272,11 @@ If you want a feature, create an [issue](https://github.com/junioralive/spy-cli/
 <!-- CONTRIBUTING -->
 ## Contributing
 
-
 Pull requests are welcome and _appreciated_. For major changes, please open an issue first to discuss what you would like to change.
 
 
 <!-- CONTACT -->
 ## Contact
-
 
 Author: JuniorAlive | ```Discord: junioralive```
 
@@ -271,9 +284,9 @@ Project Link: [https://github.com/junioralive/spy-cli](https://github.com/junior
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- Inspiration -->
 ## Inspiration
-
 
 Heavily inspired from [ani-cli](https://github.com/pystardust/ani-cli) [mov-cli](https://github.com/pystardust/mov-cli)
 
