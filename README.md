@@ -81,7 +81,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- WINDOWS -->
 ### Windows
 
-  - Make sure (`Python`)[https://www.python.org/] (`pip`)[https://pip.pypa.io/en/stable/installation/] and (`git`)[https://git-scm.com/downloads] are installed.
+  - Make sure (Python)[https://www.python.org/] (pip)[https://pip.pypa.io/en/stable/installation/] and (git)[https://git-scm.com/downloads] are installed.
   - Run this Command inside your Terminal (Installing fzf):
     ``` 
     winget install fzf
@@ -116,7 +116,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- LINUX -->
 ### Linux
 
-  - Make sure `Python` (`pip`)[https://pip.pypa.io/en/stable/installation/] and (`git`)[https://git-scm.com/downloads] are installed.
+  - Make sure `Python` (pip)[https://pip.pypa.io/en/stable/installation/] and (git)[https://git-scm.com/downloads] are installed.
   - Run this Command inside your Terminal (Installing fzf):
     ``` 
     sudo apt-get install fzf
@@ -151,7 +151,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- MAC -->
 ### MAC
 
-  - Make sure (`Python`)[https://www.python.org/] (`pip`)[https://pip.pypa.io/en/stable/installation/] and (`git`)[https://git-scm.com/downloads] are installed.
+  - Make sure (Python)[https://www.python.org/] (pip)[https://pip.pypa.io/en/stable/installation/] and (git)[https://git-scm.com/downloads] are installed.
   - Open the Terminal application on your Mac (Installing Homebrew:
     ``` 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
