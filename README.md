@@ -81,7 +81,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- WINDOWS -->
 ### Windows
 
-  - Make sure [`Python`](https://www.python.org/) (pip)[https://pip.pypa.io/en/stable/installation/] and (git)[https://git-scm.com/downloads] are installed.
+  - Make sure [`Python`](https://www.python.org/) [`pip`](https://pip.pypa.io/en/stable/installation/) and [`git`](https://git-scm.com/downloads) are installed.
   - Run this Command inside your Terminal (Installing fzf):
     ``` 
     winget install fzf
@@ -116,7 +116,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- LINUX -->
 ### Linux
 
-  - Make sure `Python` (pip)[https://pip.pypa.io/en/stable/installation/] and (git)[https://git-scm.com/downloads] are installed.
+  - Make sure `Python` [`pip`](https://pip.pypa.io/en/stable/installation/) and [`git`](https://git-scm.com/downloads) are installed.
   - Run this Command inside your Terminal (Installing fzf):
     ``` 
     sudo apt-get install fzf
@@ -151,7 +151,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- MAC -->
 ### MAC
 
-  - Make sure (Python)[https://www.python.org/] (pip)[https://pip.pypa.io/en/stable/installation/] and (git)[https://git-scm.com/downloads] are installed.
+  - Make sure [`Python`](https://www.python.org/) [`pip`](https://pip.pypa.io/en/stable/installation/) and [`git`](https://git-scm.com/downloads) are installed.
   - Open the Terminal application on your Mac (Installing Homebrew:
     ``` 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -194,7 +194,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- ANDROID --> 
 ### Android            
 
-  - Make sure [MPV](https://play.google.com/store/apps/details?id=is.xyz.mpv) and [Termux](https://play.google.com/store/apps/details?id=com.termux) are installed.
+  - Make sure [`MPV`](https://play.google.com/store/apps/details?id=is.xyz.mpv) and [`Termux`](https://play.google.com/store/apps/details?id=com.termux) are installed.
   - Run following commands (Note: this may take a while)
     ```
     pkg update && pkg upgrade
@@ -217,7 +217,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
 <!-- IOS -->
 ### iOS
 
-  - Make sure [VLC MEDIA PLAYER](https://apps.apple.com/us/app/vlc-media-player/id650377962) and [iSH](https://apps.apple.com/us/app/ish-shell/id1436902243) are installed.
+  - Make sure [`VLC MEDIA PLAYER`](https://apps.apple.com/us/app/vlc-media-player/id650377962) and [`iSH`](https://apps.apple.com/us/app/ish-shell/id1436902243) are installed.
 
   - Run following commands (Note: this may take a while)
     ```
