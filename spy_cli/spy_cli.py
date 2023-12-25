@@ -173,7 +173,8 @@ def ply(initial_url):
     
     try:
         if platform == 'windows':
-            subprocess.Popen(["mpv", f"--referrer={referrer}", url, f"--force-media-title={media_title}"])
+            mpv_path = r"C:\mpv\mpv.exe"
+            subprocess.Popen([mpv_path, f"--referrer={referrer}", url, f"--force-media-title={media_title}"])
             print("Playing, please wait...")
             time.sleep(5)
             

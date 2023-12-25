@@ -8,13 +8,15 @@ setup(
     install_requires=[
         'requests',
         'pyfzf',
+        'py7zr',
         'beautifulsoup4',
     ],
     entry_points={
         'console_scripts': [
             'spy-cli=spy_cli.spy_cli:spym_cli',
             'spy-cli.config=spy_cli.config_script:configure',
-            'spy-cli-basic=spy_cli.spyclinoserver:spyclinsm',  # assuming you have a main() function in spycli-noserver.py
-        ]
+            'spy-cli-basic=spy_cli.spyclinoserver:spyclinsm', 
+            'spy-cli-player=spy_cli.util.player_installer:install_player',
+        ],
     },
 )

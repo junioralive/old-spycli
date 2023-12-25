@@ -7,6 +7,7 @@ from typing import Optional
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
 import time 
+import os
 
 class VidSrcExtractor:
     def decode(self, str) -> bytearray:
@@ -192,7 +193,14 @@ def shorten_url(url):
 def ply(video_url, subtitle_url=None, platform='windows'):
 
     try:
-        if platform in ['windows', 'linux']:
+        if platform in 'windows':
+            mpv_path = r"C:\mpv\mpv.exe"
+            command = f"\"{mpv_path}\" --fs \"{video_url}\""
+            if subtitle_url:
+                command += f" --sub-file=\"{subtitle_url}\""
+            subprocess.Popen(command)
+            
+        elif platform == 'linux':
             command = f"mpv --fs \"{video_url}\""
             if subtitle_url:
                 command += f" --sub-file=\"{subtitle_url}\""
