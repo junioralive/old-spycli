@@ -127,7 +127,7 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
   - Make sure `Python` [`pip`](https://pip.pypa.io/en/stable/installation/) and [`git`](https://git-scm.com/downloads) are installed.
   - Run this Command inside your Terminal (Installing fzf):
     ``` 
-    sudo apt-get install fzf sudo mpv
+    sudo apt-get install fzf mpv
     ```
   - Clone the repository:
     ``` 
