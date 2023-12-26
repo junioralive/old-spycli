@@ -286,7 +286,9 @@ Pull requests are welcome and _appreciated_. For major changes, please open an i
 <!-- CONTACT -->
 ## Contact
 
-Author: JuniorAlive | ```Discord: junioralive```
+```Author: JuniorAlive ```
+```Discord: junioralive```
+```Discord Server : https://discord.gg/g7wDtnBKEb```
 
 Project Link: [https://github.com/junioralive/spy-cli](https://github.com/junioralive/spy-cli)
 
