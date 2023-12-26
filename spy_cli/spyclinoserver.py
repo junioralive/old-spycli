@@ -10,7 +10,7 @@ from spy_cli.util.scrapper import vid_parser_m
 # Search and fetch movie/tv
 def fetch_and_format_tmdb_data(query):
     # API endpoint and headers
-    url = f"https://api.themoviedb.org/3/search/multi?query={query}&page=1"
+    url = f"https://api.themoviedb.org/3/search/multi?query={query}"
     headers = {
     "accept": "application/json",
     "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYWRlOWFjMmM3ZjRiZGE4NDc4OWIzZTFjMjUyMWI2NSIsInN1YiI6IjY1MmI1ZmMxMDI0ZWM4MDEwMTUxZGM5YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.l66sbxDcyEBslvFQoSfmsqvupaCvHORm1ie6giOGBaY"
@@ -21,9 +21,19 @@ def fetch_and_format_tmdb_data(query):
         data = response.json()
         results_dict = {}
         for item in data["results"]:
-            name_or_title = item.get('name', item.get('title', ''))
+            # Get 'name' or 'title'
+            name_or_title = item.get('name', item.get('title', 'Unknown'))
+
+            # Get 'origin_country'
+            origin_country = ', '.join(item.get('origin_country', ['Unknown']))
+
+            # Combine name/title and origin_country
+            combined_name = f"{name_or_title} - {origin_country}"
+
+            # Assigning the combined string with the link
             link = f"https://api.themoviedb.org/3/{item['media_type']}/{item['id']}"
-            results_dict[name_or_title] = link
+            results_dict[combined_name] = link
+
         return json.dumps(results_dict, indent=4)
     else:
         return f"Failed to fetch data: {response.status_code}"
