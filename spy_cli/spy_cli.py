@@ -179,9 +179,13 @@ def ply(initial_url):
             time.sleep(5)
             
         elif platform == 'linux':
-            subprocess.Popen(["mpv", f"--referrer={referrer}", url, f"--force-media-title={media_title}"])
-            print("Playing, please wait...")
-            time.sleep(5)
+            try:
+                subprocess.Popen(["mpv", f"--referrer={referrer}", url, f"--force-media-title={media_title}"], shell=False)
+                print("Playing, please wait...")
+                time.sleep(5)
+            except Exception as e:
+                print(f"Error occurred: {e}")
+
             
         elif platform == 'android':
             subprocess.Popen(["am", "start", "-n", "is.xyz.mpv/is.xyz.mpv.MPVActivity", "-e", "filepath", url])
