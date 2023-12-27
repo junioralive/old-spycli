@@ -139,11 +139,11 @@ No API No problem, READ about [spycli-noserver](https://github.com/junioralive/s
     ```
   - Installing setuptools:
     ``` 
-    pip install --upgrade setuptools wheel
+    pip3 install --upgrade setuptools wheel
     ``` 
   - Install requirements and dependencies:
     ``` 
-    pip install -e .
+    pip3 install -e .
     ```
   - First time run:
     ``` 
