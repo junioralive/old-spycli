@@ -185,7 +185,6 @@ def ply(initial_url):
                 time.sleep(5)
             except Exception as e:
                 print(f"Error occurred: {e}")
-
             
         elif platform == 'android':
             subprocess.Popen(["am", "start", "-n", "is.xyz.mpv/is.xyz.mpv.MPVActivity", "-e", "filepath", url])
