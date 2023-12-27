@@ -200,11 +200,14 @@ def ply(video_url, subtitle_url=None, platform='windows'):
                 command += f" --sub-file=\"{subtitle_url}\""
             subprocess.Popen(command)
             
-        elif platform == 'linux':
+        if platform == 'linux':
             command = f"mpv --fs \"{video_url}\""
             if subtitle_url:
                 command += f" --sub-file=\"{subtitle_url}\""
-            subprocess.Popen(command)
+            try:
+                subprocess.Popen(command, shell=True)
+            except Exception as e:
+                print(f"Error occurred: {e}")
 
         elif platform == 'mac':
             command = f"mpv --fs \"{video_url}\""
