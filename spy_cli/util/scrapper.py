@@ -6,8 +6,6 @@ from pyfzf.pyfzf import FzfPrompt
 from typing import Optional
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
-import time 
-import os
 
 class VidSrcExtractor:
     def decode(self, str) -> bytearray:
