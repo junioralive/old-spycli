@@ -6,6 +6,8 @@ from pyfzf.pyfzf import FzfPrompt
 from typing import Optional
 from bs4 import BeautifulSoup
 from urllib.parse import unquote
+import time 
+import os
 
 class VidSrcExtractor:
     def decode(self, str) -> bytearray:
@@ -202,10 +204,7 @@ def ply(video_url, subtitle_url=None, platform='windows'):
             command = f"mpv --fs \"{video_url}\""
             if subtitle_url:
                 command += f" --sub-file=\"{subtitle_url}\""
-            try:
-                subprocess.Popen(command, shell=False)
-            except Exception as e:
-                print(f"Error occurred: {e}")
+            subprocess.Popen(command,shell=True)
 
         elif platform == 'mac':
             command = f"mpv --fs \"{video_url}\""
